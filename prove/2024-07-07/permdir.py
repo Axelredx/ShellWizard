@@ -7,7 +7,7 @@ import sys
 def permdir(directory):
     # check if dir parameter ok
     if not os.path.isdir(directory):
-        print(f"Errore: {directory} non è una directory valida")
+        print(f"Error: {directory} is not a valid directory")
         return
     
     # iteration on file in dir
@@ -35,12 +35,12 @@ def permdir(directory):
         
         # crwation symb.link
         os.symlink(filepath, symlink_path)
-        print(f"Creato link: {symlink_path} -> {filepath}")
+        print(f"Symbolic link created: {symlink_path} -> {filepath} !")
 
 if __name__ == "__main__":
     # check minimum arg
     if len(sys.argv) != 2:
-        print(f"Uso: {sys.argv[0]} <directory>")
+        print(f"Bad usage of: {sys.argv[0]} <directory>")
         sys.exit(1)
     
     directory_path = sys.argv[1]
