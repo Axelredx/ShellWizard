@@ -43,7 +43,7 @@ def print_catalog(file_catalog):
 
 def main():
     if len(sys.argv) > 2:
-        print(f"Usage: {sys.argv[0]} [directory]", file=sys.stderr)
+        print(f" Error, correct usage: {sys.argv[0]} [directory]", file=sys.stderr)
         sys.exit(1)
 
     directory = sys.argv[1] if len(sys.argv) == 2 else '.'
