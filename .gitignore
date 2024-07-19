@@ -1,7 +1,6 @@
 /tmp
 
 # ignore executable
-**/*.[!o]
 **/*.o
 **/*.*.sh
 **/*.out
