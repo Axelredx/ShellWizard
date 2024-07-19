@@ -1,4 +1,12 @@
 /tmp
 
 # ignore executable
-*.[!o]
+**/*.[!o]
+**/*.o
+**/*.*.sh
+**/*.out
+**/*.exe
+**/bin/*
+**/build/*
+**/*.run
+**/a.out
